@@ -1,0 +1,13 @@
+[user]
+	name = YOUR_NAME
+	email = YOUR_EMAIL
+[color]
+	ui = true
+[core]
+	editor = code -w
+[diff]
+	tool = default-difftool
+[difftool "default-difftool"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[difftool]
+	prompt = false
