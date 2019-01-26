@@ -1,0 +1,12 @@
+// edit git config
+git config —global -e
+
+// setting Visual Studio Code (code) as main editor
+git config —global core.editor code 
+
+// setting code as a default diff tool
+git config —global diff.tool default-difftool
+
+// then we edit and add lines
+[difftool "default-difftool”]
+    cmd = code —wait —diff $LOCAL $REMOTE
