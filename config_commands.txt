@@ -10,3 +10,7 @@ git config —global diff.tool default-difftool
 // then we edit and add lines
 [difftool "default-difftool”]
     cmd = code —wait —diff $LOCAL $REMOTE
+
+//setting code as a default merge tool
+git config --global merge.tool vscode
+git config --global mergetool.vscode.cmd "code --wait $MERGED"
