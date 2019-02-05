@@ -1,0 +1,17 @@
+// list all stashes
+git stash list
+
+// simple stash (ads only modified files)
+git stash
+
+// simple apply stash  (get our changes basck)
+git stash apply
+
+// dropping (removing) the last stash
+git stash drop
+
+// stashing untracked files (all files)
+git stash -u
+
+// applying and deleting last stash in one command
+git stash pop
