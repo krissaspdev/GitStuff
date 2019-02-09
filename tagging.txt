@@ -1,0 +1,44 @@
+//Simple example with lightweight tags and some basic tag commands.
+
+git tag myTag
+git log --oneline --decorate --graph --all
+git tag --list
+git show myTag
+git tag --list
+git tag --delete myTag
+
+//Annotated tags are tags with more information, like comments, associated with them.
+
+git tag -a v-1.0
+git tag --list
+git log --oneline --decorate --graph --all
+git show v-1.0
+
+//Comparing tags
+//Tags mark important milestones in a project, so they are great way to compare what has happened between those milestones
+
+git diff v-1.0 v-1.2
+//or
+git difftool v-1.0 v-1.2
+
+//Tagging a Specific Comment
+//If you forget to tag a commit in the past, you can simply pass in the commit id while creating the tag.
+
+git tag -a v-0.9-beta 96ef75b
+
+//Updating Tags
+//Sometimes mistakes happen and you'll need to update a tag.
+//(use -f to forse)
+
+git tag -a v-0.8-alpha -f bd35d46
+
+//Remote Tagging (GitHub)
+//Pushing concrete tag to remote repository
+
+git push origin v-1.1
+
+//Pushing all tags to remote
+git push origin master --tags
+
+//Remove particular tag from remote
+git push origin :v-0.8-alpha
