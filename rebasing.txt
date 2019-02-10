@@ -17,4 +17,13 @@ git add .
 git rebase --continue
 
 
+//Playing with remotes
 
+//To updates the references and see the diference between local an remote we use fetch
+// git fetch is non-destructive
+git fetch origin master
+//and then to see differences
+git status
+
+//To rebase from remote we do:
+git pull --rebase origin master
