@@ -15,3 +15,5 @@
         tool = vscode
 [mergetool "vscode"]
         cmd = code --wait $MERGED
+[alias]
+	hist = log --oneline --graph --decorate --all

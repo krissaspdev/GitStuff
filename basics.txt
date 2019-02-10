@@ -1,0 +1,6 @@
+//Git alias
+//to create new command we use alias (this is a shortcut)
+git config --global alias.hist "log --oneline --graph --decorate --all"
+
+//we have now new command
+git hist
