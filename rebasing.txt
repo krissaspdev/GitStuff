@@ -1,0 +1,20 @@
+// Simple rebase from master (from the feature branch)
+git rebase master
+
+//Aborting rebase when there is a conflict (we don't want to continue rebasing)
+git rebase --abort
+
+//If there is a conflict (we are in conflicting stage) we have to use merge tool
+//we have to resolve all conflicts
+git mergetool
+
+//After resolving conflicts we add all files
+git add your_fiename
+//or
+git add .
+
+//To finish rebasing after conflict we use:
+git rebase --continue
+
+
+
