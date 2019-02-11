@@ -1,0 +1,29 @@
+//Show all branches
+git branch -a
+
+//Creating new branch (do not move to that branch)
+git branch mynewbranch
+
+//Create new branch wit switch to that branch
+git checkout -b newbranch
+
+git checkout mynewbranch
+
+//Branch renaming
+git branch -m mynewbranch newbarnch
+
+//Deleting branch (you can't do this from this particular branch)
+git branch -d newbranch
+
+//Switching between branches
+git checkout mybranch
+
+//Merging (from master branch)
+//If there was no changes on master there will be fast-forward merge
+git merge newfeature
+
+//Merging with disable fast-forward option
+git merge newfeature --no-ff
+
+//Merging and adding comments at the same time (automatic merges)
+git merge newfeature -m "Some comment"
