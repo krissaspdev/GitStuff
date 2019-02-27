@@ -1,0 +1,10 @@
+//you can undo git add operation before commit with
+git reset <file>
+//or all files
+git reset
+
+//to undo your last commit, but leave your files and your index
+git reset --soft HEAD~1
+
+//undo commit and remove changes
+git reset --hard HEAD~1
