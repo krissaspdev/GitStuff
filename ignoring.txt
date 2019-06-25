@@ -1,0 +1,22 @@
+//To .gitignore add specific files
+
+# Specific to project
+*appsettings.Production.json
+*appsettings.Development.json
+
+//It removes the entire cache (or check another options)
+git rm --cached -r .
+
+//Adds the files you want to track
+git add .
+
+//Commit
+git commit -m "removed all and added with git ignore"
+
+
+//Another options fo removing from cache
+//This would remove <file> from version control, while keeping it in the working repository. 
+git rm --cached <file>
+
+//Works recursively on a folder and all files in it
+git rm --cached -r <dir>
