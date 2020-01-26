@@ -1,0 +1,8 @@
+# setting new remote
+git remote add origin <remote repository URL>
+
+# Verifies the new remote URL
+$ git remote -v
+
+# Pushing all from local master to origin master
+git push origin master
