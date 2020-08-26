@@ -1,10 +1,23 @@
+//unstaged local changes (before you commit)
+//discarding local changes (permanently) to a file
+git checkout -- <file>
+
+//discard all local changes to all files permanently
+git reset --hard
+
 //you can undo git add operation before commit with
 git reset <file>
 //or all files
 git reset
+
+//discard all local changes, but save them for possible re-use later
+git stash
 
 //to undo your last commit, but leave your files and your index
 git reset --soft HEAD~1
 
 //undo commit and remove changes
 git reset --hard HEAD~1
+
+//read this
+https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/
