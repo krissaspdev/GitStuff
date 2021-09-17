@@ -17,3 +17,8 @@
         cmd = code --wait $MERGED
 [alias]
 	hist = log --oneline --graph --decorate --all
+	hist2 = log --pretty=oneline
+[pull]
+	rebase = true
+[fetch]
+	prune = true
