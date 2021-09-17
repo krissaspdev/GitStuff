@@ -14,3 +14,7 @@ git config --global diff.tool default-difftool
 //setting code as a default merge tool
 git config --global merge.tool vscode
 git config --global mergetool.vscode.cmd "code --wait $MERGED"
+
+//Git Configurations that Should Be the Default
+git config --global pull.rebase true
+git config --global fetch.prune true
